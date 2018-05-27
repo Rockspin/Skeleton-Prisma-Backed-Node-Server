@@ -1,0 +1,11 @@
+
+# import Post from "./generated/prisma.graphql"
+
+type Query {
+    # logged in user queries
+    user(where: UserWhereUniqueInput!): User
+}
+
+type Mutation {
+    createUser(data: UserCreateInput!): User!
+}

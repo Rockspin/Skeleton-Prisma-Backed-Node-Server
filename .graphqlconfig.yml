@@ -1,0 +1,20 @@
+projects:
+  app:
+    schemPath: src/schema.graphql
+    extensions:
+      endpoints:
+        default: 'http://localhost:4000'
+  prisma:
+    schemaPath: src/generated/prisma.graphql
+    extensions:
+      prisma: prisma/prisma.yml
+      endpoints:
+        dev:
+          url: 'http://localhost:4466/contentLinkPrisma/dev'
+          headers:
+            Authorization: >-
+              Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InNlcnZpY2UiOiJjb250ZW50TGlua1ByaXNtYUBkZXYiLCJyb2xlcyI6WyJhZG1pbiJdfSwiaWF0IjoxNTI3NDIyMjE4LCJleHAiOjE1MjgwMjcwMTh9.XtsjmxPB-2kv0saTNPxDoB_qZWfVOZ2H0ebxrzWu4p4
+      prepare-binding:
+        output: src/generated/prisma.ts
+        generator: prisma-ts
