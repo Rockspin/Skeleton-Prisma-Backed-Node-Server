@@ -18,7 +18,7 @@
     "prisma-binding": "^2.0.2"
   },
   "devDependencies": {
-    "@types/bcryptjs": "^2.4.1",
+    "@types/bcryptjs": "^2.4.2",
     "@types/jest": "^22.2.3",
     "dotenv-cli": "^1.4.0",
     "jest": "^23.0.0",
