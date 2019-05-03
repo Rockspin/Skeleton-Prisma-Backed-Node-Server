@@ -22,7 +22,7 @@
     "@types/jest": "^22.2.3",
     "dotenv-cli": "^1.4.0",
     "jest": "^23.0.0",
-    "nodemon": "^1.17.5",
+    "nodemon": "^1.19.0",
     "prisma": "^1.8.3",
     "serverless": "^1.27.3",
     "serverless-offline": "^3.24.1",
